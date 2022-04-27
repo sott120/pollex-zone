@@ -1,0 +1,72 @@
+/* 공통 */
+.w1520 {
+    width: 1520px;
+    margin: auto;
+}
+/* 공통 */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+}
+#header_top {
+    display: flex;
+    width: 1520px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 img {
+    height: 35px;
+}
+.logo_ps > ul {
+    display: flex;
+}
+.logo_ps li {
+    margin: 0 15px;
+}
+nav > ul {
+    display: flex;
+}
+
+nav > ul a {
+    display: flex;
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 70px;
+    color: #000;
+}
+.btn_nav {
+    padding-left: 150px;
+    /* 나중에 빼줘야됨 */
+}
+.btn_nav a {
+    display: inline-block;
+    font-size: 0;
+    text-align: right;
+    width: 21px;
+    height: 21px;
+}
+
+.btn_nav span {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 6px;
+    display: block;
+    background-color: #000;
+    transition: width 0.3s;
+    /* 트랜지션 종류 찾아보기 */
+}
+
+.btn_nav span:last-child {
+    width: 60%;
+}
+
+.btn_nav a:hover span:first-child {
+    width: 60%;
+}
+.btn_nav a:hover span:last-child {
+    width: 100%;
+}

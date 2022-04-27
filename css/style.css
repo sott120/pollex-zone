@@ -1,0 +1,370 @@
+main {
+    padding-top: 70px;
+}
+
+/* .svg_wrap {
+    position: relative;
+    padding-top: 70px;
+}
+
+svg {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+svg > text {
+    font-size: 180px;
+    font-weight: bold;
+}
+.sec1_txt {
+    width: 1520px;
+    margin: auto;
+    position: relative;
+    top: -140px;
+    z-index: 10;
+}
+
+.svg_wrap p {
+    font-size: 44px;
+    line-height: 64px;
+    font-weight: bold;
+    color: #000;
+} */
+
+#sec1 {
+    position: relative;
+    padding: 125px 0;
+    /* 높이가 있는애가 relative 없는애가 앱솔루트인게 편하다 */
+}
+
+.svg_wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+svg > text {
+    font-size: 180px;
+    font-weight: bold;
+    fill: transparent;
+    stroke: #b0e3a3;
+    stroke-width: 2;
+}
+
+#sec1 article {
+    position: relative;
+    z-index: 10;
+    top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#sec1 article p {
+    font-size: 44px;
+    line-height: 64px;
+    font-weight: bold;
+    color: #000;
+}
+
+.btn_more a {
+    display: block;
+    width: 180px;
+    height: 60px;
+    line-height: 56px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 18px;
+}
+/* sec2 start */
+#sec2 {
+    padding-top: 50px;
+}
+
+.mc1_img_wrap {
+    width: 100%;
+    padding-top: calc(662 / 1920 * 100%);
+    background-image: url(../img/main/mc1_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mc1_bnr {
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    background-image: url(../img/main/mc1_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* 가로세로 가운데정렬 두가지방법 */
+    /* display: flex;
+    flex-direction: colum;
+    justifycontent: center; */
+}
+
+.mc1_bnr h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 4.94px;
+}
+
+.mc1_bnr p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.4;
+    margin-top: 22px;
+}
+/* 
+#sec3 {
+    width: 1530px;
+    margin: auto;
+    padding: 185px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one_wrap a {
+    display: block;
+    background-image: url(../img/main/);
+}
+
+.one_img {
+    width: 50%;
+}
+.one_img > a > div {
+    position: relative;
+    width: calc(100% - 10px);
+    height: 605px;
+    padding: 5px;
+    background-image: url(../img/main/mc2_img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.one_img > a > div > div {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.one_img h3 {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+}
+.one_img p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.second_img {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.second_img > div {
+    width: 50%;
+}
+.second_img a > div {
+    width: calc(100% - 10px);
+    height: 305px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.second_img1 {
+    background-image: url(../img/main/mc2_img2.jpg);
+}
+.second_img2 {
+    background-image: url(../img/main/mc2_img3.jpg);
+}
+.second_img3 {
+    background-image: url(../img/main/mc2_img4.jpg);
+}
+.second_img4 {
+    background-image: url(../img/main/mc2_img5.jpg);
+}
+.second_img a > div > div {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.second_img h3 {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.second_img p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+} */
+
+.contents {
+    display: flex;
+    padding: 185px 0;
+}
+
+.cont_big {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.cont_big a {
+    display: block;
+    width: 100%;
+    height: 620px;
+    background-color: antiquewhite;
+    background-image: url(../img/main/mc2_img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.cont_small {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont_small > div {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.cont_small a {
+    display: block;
+    width: 100%;
+    height: 305px;
+    background-color: #b0e3a3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.cont_small .img1 {
+    background-image: url(../img/main/mc2_img2.jpg);
+}
+.cont_small .img2 {
+    background-image: url(../img/main/mc2_img3.jpg);
+}
+.cont_small .img3 {
+    background-image: url(../img/main/mc2_img4.jpg);
+}
+.cont_small .img4 {
+    background-image: url(../img/main/mc2_img5.jpg);
+}
+
+.cont_txt {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cont_txt h3 {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.cont_txt p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.black {
+    background-color: #000;
+}
+
+.mc3 {
+    padding: 135px 0;
+}
+.mc3 > h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 54px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.mc3 > div {
+    width: calc(100% + 114px);
+    display: flex;
+    margin-left: -57px;
+}
+
+.mc3 figure {
+    width: 33.333%;
+    padding: 0 57px;
+    box-sizing: border-box;
+}
+
+.mc3 img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #fff;
+    margin-top: 40px;
+}
+
+figcaption h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+figcaption p {
+    font-size: 15px;
+    line-height: 22px;
+    opacity: 0.6;
+    margin-top: 14px;
+}
+
+.btn_mc3 {
+    display: block;
+    margin-top: 50px;
+    width: 120px;
+    line-height: 38px;
+    border: 1px solid #b3b3b3;
+    box-sizing: border-box;
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 14px;
+}
