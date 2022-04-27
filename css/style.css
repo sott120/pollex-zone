@@ -368,3 +368,228 @@ figcaption p {
     color: #b3b3b3;
     font-size: 14px;
 }
+/* .bg_img {
+    position: relative;
+    width: 100%;
+    height: 1072px;
+    background-image: url(../img/main/mc4_loc2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.mc4 {
+    width: 1520px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.txt_wrap span {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+    color: #39b919;
+}
+.txt_wrap h2 a {
+    color: #fff;
+    font-size: 100px;
+    line-height: 148px;
+    font-weight: 300;
+}
+
+.txt_wrap p {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 28px;
+    color: #fff;
+}
+
+.icon_wrap > div {
+    margin-top: 30px;
+}
+.icon_wrap span {
+    display: block;
+    width: 132px;
+    height: 132px;
+    border: 3px solid #39b919;
+    box-sizing: border-box;
+    background-position: center center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.icon_wrap p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.img1{
+
+} */
+
+.center {
+    width: 100%;
+    height: 1072px;
+    position: relative;
+}
+
+.cen_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ma_img {
+    background-image: url(../img/main/mc4_loc2.jpg);
+}
+.go_img {
+    background-image: url(../img/main/mc4_loc3.jpg);
+}
+.se_img {
+    background-image: url(../img/main/mc4_loc1.jpg);
+}
+
+.cen_wrap {
+    position: absolute;
+    /* margin:auto랑 함께 쓰려면 relative 밖에 안됨 */
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.cen_txt span {
+    font-size: 20px;
+    line-height: 29px;
+    color: #39b919;
+}
+
+.cen_txt h2 a {
+    color: #fff;
+    font-size: 100px;
+    line-height: 148px;
+    font-weight: 300;
+}
+
+.cen_txt p {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 28px;
+    color: #fff;
+}
+
+.cen_txt p span {
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.cen_icon li {
+    margin-top: 30px;
+}
+.cen_icon span {
+    display: block;
+    width: 132px;
+    height: 132px;
+    border: 3px solid #39b919;
+    box-sizing: border-box;
+    background-position: center center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.ma_icon span {
+    background-image: url(../img/main/mc4_icon2.png);
+}
+.go_icon span {
+    background-image: url(../img/main/mc4_icon3.png);
+}
+.se_icon span {
+    background-image: url(../img/main/mc4_icon1.png);
+}
+
+.cen_icon p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.notice {
+    padding: 150px 0;
+    border-top: 6px solid #39b919;
+}
+
+.noti_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.noti_wrap > div {
+    width: 50%;
+}
+
+.noti_left {
+    padding-right: 40px;
+}
+
+.noti_right {
+    padding-left: 40px;
+}
+.noti_wrap h4 {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    color: #00305b;
+    margin-bottom: 20px;
+}
+
+.noti_wrap h4 a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #999;
+    float: right;
+}
+
+.noti_wrap ul {
+    border-top: 2px solid #000;
+}
+
+.noti_wrap li {
+    border-bottom: 1px solid #000;
+}
+
+.noti_wrap a {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9px;
+    color: #333;
+}
+
+.noti_wrap p {
+    font-size: 15px;
+    line-height: 58px;
+    font-weight: bold;
+}
+
+.noti_wrap span {
+    font-size: 13px;
+    line-height: 58px;
+    color: #999;
+}

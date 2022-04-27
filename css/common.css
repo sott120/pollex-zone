@@ -3,7 +3,7 @@
     width: 1520px;
     margin: auto;
 }
-/* 공통 */
+/* header */
 header {
     position: fixed;
     width: 100%;
@@ -69,4 +69,37 @@ nav > ul a {
 }
 .btn_nav a:hover span:last-child {
     width: 100%;
+}
+
+/* footer start */
+
+.ft_wrap {
+    padding: 60px 0;
+    display: flex;
+}
+.ft_logo {
+    width: 192px;
+}
+.ft_logo img {
+    width: 100%;
+    height: auto;
+}
+
+.ft_info {
+    padding-left: 50px;
+}
+
+.ft_info li {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #707070;
+}
+
+/* .ft_info li:last-child {
+    margin-top: 8px;
+} */
+
+.ft_info span:not(:last-child)::after {
+    content: " /";
 }
