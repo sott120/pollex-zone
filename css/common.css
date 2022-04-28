@@ -34,7 +34,7 @@ nav > ul a {
     display: flex;
     padding: 0 30px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 70px;
     color: #000;
 }
@@ -76,15 +76,23 @@ nav > ul a {
 .ft_wrap {
     padding: 60px 0;
     display: flex;
+    justify-content: space-between;
 }
 .ft_logo {
     width: 192px;
 }
+
 .ft_logo img {
     width: 100%;
     height: auto;
 }
+.ft_txt {
+    display: none;
+}
 
+.ft_sblogo {
+    display: none;
+}
 .ft_info {
     padding-left: 50px;
 }
@@ -95,6 +103,9 @@ nav > ul a {
     line-height: 20px;
     color: #707070;
 }
+.ft_info li span {
+    display: inline-block;
+}
 
 /* .ft_info li:last-child {
     margin-top: 8px;
@@ -102,4 +113,135 @@ nav > ul a {
 
 .ft_info span:not(:last-child)::after {
     content: " /";
+}
+
+.ft_copy {
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.ft_copy a {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    color: #707070;
+}
+
+.ft_copy a:last-child {
+    margin: 0;
+}
+.ft_copy a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    right: -10px;
+    top: 4px;
+    background-color: #707070;
+}
+
+.ft_copy a:nth-child(2) {
+    color: #39b919;
+}
+
+.ft_copy p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+    color: #707070;
+}
+
+@media only screen and (max-width: 1520px) {
+    .w1520 {
+        width: 95%;
+    }
+
+    #header_top {
+        width: 95%;
+    }
+
+    .btn_nav {
+        padding-left: 0;
+    }
+
+    .logo_ps li {
+        margin: 0;
+    }
+
+    .logo_ps li img {
+        width: 72%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1244px) {
+    .logo_ps {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .ft_wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ft_info {
+        padding: 0;
+    }
+
+    .ft_copy {
+        text-align: left;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+    }
+
+    .ft_info {
+        margin-top: 30px;
+    }
+    .ft_info li {
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+    }
+    .ft_copy {
+        margin-top: 30px;
+    }
+    .ft_copy p {
+        color: #fff;
+    }
+    .ft_copy a {
+        color: #fff;
+    }
+    .ft_copy a:nth-child(2) {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+    header {
+        padding: 8px 0;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ft_logo {
+        display: none;
+    }
+    .ft_txt {
+        display: block;
+        color: #fff;
+        font-size: 38px;
+        margin-bottom: 19px;
+    }
+    .ft_sblogo {
+        display: block;
+    }
 }
