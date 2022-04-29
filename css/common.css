@@ -5,7 +5,10 @@
 }
 /* header */
 header {
+    display: flex;
+    align-items: center;
     position: fixed;
+    height: 70px;
     width: 100%;
     z-index: 999;
     background-color: #fff;
@@ -18,6 +21,8 @@ header {
     align-items: center;
 }
 h1 img {
+    position: relative;
+    top: -3px;
     height: 35px;
 }
 .logo_ps > ul {
@@ -38,21 +43,20 @@ nav > ul a {
     line-height: 70px;
     color: #000;
 }
-.btn_nav {
-    padding-left: 150px;
-    /* 나중에 빼줘야됨 */
-}
+
 .btn_nav a {
     display: inline-block;
     font-size: 0;
     text-align: right;
     width: 21px;
     height: 21px;
+    overflow: hidden;
 }
 
 .btn_nav span {
     width: 100%;
     height: 3px;
+    float: right;
     margin-bottom: 6px;
     display: block;
     background-color: #000;
@@ -163,10 +167,6 @@ nav > ul a {
         width: 95%;
     }
 
-    .btn_nav {
-        padding-left: 0;
-    }
-
     .logo_ps li {
         margin: 0;
     }
@@ -223,15 +223,29 @@ nav > ul a {
 }
 
 @media only screen and (max-width: 949px) {
-    header {
+    /* header {
         padding: 8px 0;
-    }
+    } */
     nav {
         display: none;
     }
 }
 
 @media only screen and (max-width: 767px) {
+    header {
+        height: 50px;
+    }
+    .btn_nav {
+        padding-top: 5px;
+    }
+    .btn_nav span {
+        height: 2px;
+    }
+
+    h1 img {
+        left: 15px;
+        height: 26px;
+    }
     .ft_logo {
         display: none;
     }
