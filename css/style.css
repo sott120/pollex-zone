@@ -57,7 +57,7 @@ svg > text {
 }
 /* sec2 start */
 #sec2 {
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .mc1_img_wrap {
@@ -824,15 +824,17 @@ img.intrd_txt {
     #sec1 {
         padding-top: 0;
     }
+
+    #sec1 article {
+        top: 125px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     #sec1 article p {
         display: block;
         font-size: 18px;
         line-height: 28px;
-    }
-
-    #sec1 article {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .btn_more a {
