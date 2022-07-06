@@ -259,6 +259,8 @@ figcaption p {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    opacity: 0;
+    transition: all .4s ease-in-out;
 }
 
 .ma_img {
@@ -271,6 +273,10 @@ figcaption p {
     background-image: url(../img/main/mc4_loc1.jpg);
 }
 
+.cen_img.on{
+    opacity: 1;
+}
+
 .cen_wrap {
     position: absolute;
     /* margin:auto랑 함께 쓰려면 relative 밖에 안됨 */
@@ -281,6 +287,23 @@ figcaption p {
     justify-content: space-between;
     align-items: flex-end;
 }
+
+.cen_txt > div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 200px;
+    color: #fff;
+    opacity: 0;
+    z-index: 0;
+    text-align: left;
+    transition: all .4s ease-in-out;
+}
+
+.cen_txt > div.on{
+    opacity: 1;
+}
+
 .cen_txt span {
     font-size: 20px;
     line-height: 29px;
@@ -311,6 +334,11 @@ figcaption p {
 .cen_icon li {
     margin-top: 30px;
 }
+
+.cen_icon li:hover p{
+    opacity: 1;
+}
+
 .cen_icon span {
     display: block;
     width: 132px;
