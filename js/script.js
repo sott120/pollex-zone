@@ -37,3 +37,19 @@ function squareCont() {
 }
 
 window.addEventListener('scroll', squareCont);
+
+
+const ham = document.getElementById('ham'); 
+const hamChild = ham.childNodes;
+console.log(ham);
+console.log(hamChild);
+
+ham.addEventListener('click',hamClick);
+
+function hamClick(){
+    if(ham.classList.contains('active') === true){
+    ham.classList.remove('active');
+    } else{
+        ham.classList.add('active');
+    }
+}

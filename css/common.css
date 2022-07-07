@@ -110,6 +110,7 @@ nav > ul > li > ul a:hover{
 }
 
 .btn_nav a {
+    position: relative;
     display: inline-block;
     font-size: 0;
     text-align: right;
@@ -120,17 +121,25 @@ nav > ul > li > ul a:hover{
 
 .btn_nav span {
     width: 100%;
+    position: absolute;
     height: 3px;
     float: right;
     margin-bottom: 6px;
     display: block;
     background-color: #000;
-    transition: width 0.3s;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transform-origin: 0;
     /* 트랜지션 종류 찾아보기 */
 }
 
-.btn_nav span:last-child {
+.btn_nav span:nth-child(2) {
+    top: 7px;
+}
+
+.btn_nav span:nth-child(3) {
     width: 60%;
+    top: 14px;
 }
 
 .btn_nav a:hover span:first-child {
@@ -138,6 +147,32 @@ nav > ul > li > ul a:hover{
 }
 .btn_nav a:hover span:last-child {
     width: 100%;
+}
+
+.btn_nav a.active span{
+    background-color: #39b919;
+    width: 100%;
+    margin: 0;
+}
+
+.btn_nav a.active:hover span:first-child {
+    width: 100%;
+}
+
+.btn_nav a.active span:nth-child(1) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 1px;
+}
+
+.btn_nav a.active span:nth-child(2) {
+    width: 0;
+}
+.btn_nav a.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: -11px;
+    left: 1px;
 }
 
 /* footer start */
