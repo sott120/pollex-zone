@@ -1,4 +1,4 @@
-@keyframes sildein {
+/* @keyframes sildein {
     from {
         top: -70px;
     }
@@ -38,4 +38,36 @@
         top: 0;
     }
 }
+} */
+
+
+.aniBox.type_cv:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 101%;
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.aniBox.type_cv.rightleft:after {
+    right: 0;
+    left: auto;
+}
+
+.aniBox.type_cv.bottop:after {
+    top: 0;
+}
+
+.aniBox.type_cv.gogo:after {
+    height: 0;
+}
+
+
+.aniBox.type_cv.rightleft.gogo:after, .aniBox.type_cv.leftright.gogo:after {
+    width: 0;
+    height: 101%;
 }

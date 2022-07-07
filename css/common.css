@@ -39,13 +39,74 @@ nav > ul {
     display: flex;
 }
 
-nav > ul a {
+nav > ul > li{
+    position: relative;
+}
+
+nav > ul > li > a {
     display: flex;
     padding: 0 30px;
     font-size: 15px;
-    font-weight: bold;
     line-height: 70px;
     color: #000;
+}
+
+nav > ul > li:hover > a{
+    font-weight: bold;
+}
+
+nav > ul > li > a::before {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #00305b;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transition: width .25s ease-in-out;
+    -webkit-transition: width .25s ease-in-out;
+}
+
+nav > ul > li:hover > a::before{
+    width: 100%;
+}
+
+nav > ul > li > ul{
+    text-align: left;
+    display: none;
+    position: absolute;
+    left: 50%;
+    min-width: 100%;
+    padding: 20px 34px;
+    background-color: #ffffff;
+    z-index: -1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+} 
+
+nav > ul > li:hover ul{
+    display: block;
+}
+
+nav > ul > li > ul a{
+    display: block;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 2.67;
+    color: #646464;
+    transition: color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+}
+
+nav > ul > li > ul a:hover{
+    color: #00305b;
+    text-shadow: 0 0 0.5px #00305b;
 }
 
 .btn_nav a {
