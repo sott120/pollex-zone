@@ -31,7 +31,8 @@ svg > text {
     font-size: 180px;
     font-weight: bold;
     fill: transparent;
-    stroke: #b0e3a3;
+    stroke: rgb(57, 185, 25);
+    opacity: .4;
     stroke-width: 2;
     stroke-dasharray: 750;
     stroke-dashoffset: 750;
@@ -476,14 +477,14 @@ figcaption p {
 .noti_wrap a {
     display: flex;
     justify-content: space-between;
-    padding-left: 9px;
+    padding: 0 9px;
     color: #333;
 }
 
 .noti_wrap p {
     font-size: 15px;
     line-height: 58px;
-    font-weight: bold;
+    font-weight: 500;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
