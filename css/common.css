@@ -280,7 +280,7 @@ nav > ul > li > ul a:hover {
     display: block;
     margin-top: 30px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.3s;
     height: auto;
 }
 
@@ -478,8 +478,10 @@ nav > ul > li > ul a:hover {
         max-height: 0;
     }
 
-    .allMenuWrap .allMenu li ul.active {
-    }
+    /* .allMenuWrap .allMenu li ul.mToggle.active {
+        margin-top: 20px;
+        margin-bottom: 17px;
+    } */
 
     .allMenuWrap .allMenu > li + li {
         margin-top: 10px;
