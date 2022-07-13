@@ -18,7 +18,7 @@ header {
     width: 100%;
     z-index: 999;
     background-color: #fff;
-    animation-duration: .6s;
+    animation-duration: 0.6s;
     animation-name: sildein;
 }
 
@@ -40,8 +40,8 @@ h1 img {
     position: absolute;
     top: 12px;
     z-index: 99999;
-    transition: all .6s ease-in-out;
-    -webkit-transition: all .6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
 }
 
 .logo .logo_color {
@@ -52,7 +52,7 @@ h1 img {
     opacity: 0;
 }
 
-.logo_ps>ul {
+.logo_ps > ul {
     display: flex;
     padding-left: 80px;
 }
@@ -61,15 +61,15 @@ h1 img {
     margin: 0 15px;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
 }
 
-nav>ul>li {
+nav > ul > li {
     position: relative;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
     display: flex;
     padding: 0 30px;
     font-size: 15px;
@@ -78,11 +78,11 @@ nav>ul>li>a {
     white-space: nowrap;
 }
 
-nav>ul>li:hover>a {
+nav > ul > li:hover > a {
     font-weight: bold;
 }
 
-nav>ul>li>a::before {
+nav > ul > li > a::before {
     position: absolute;
     content: '';
     display: block;
@@ -93,15 +93,15 @@ nav>ul>li>a::before {
     background-color: #00305b;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-    transition: width .25s ease-in-out;
-    -webkit-transition: width .25s ease-in-out;
+    transition: width 0.25s ease-in-out;
+    -webkit-transition: width 0.25s ease-in-out;
 }
 
-nav>ul>li:hover>a::before {
+nav > ul > li:hover > a::before {
     width: 100%;
 }
 
-nav>ul>li>ul {
+nav > ul > li > ul {
     text-align: left;
     display: none;
     position: absolute;
@@ -117,11 +117,11 @@ nav>ul>li>ul {
     box-sizing: border-box;
 }
 
-nav>ul>li:hover ul {
+nav > ul > li:hover ul {
     display: block;
 }
 
-nav>ul>li>ul a {
+nav > ul > li > ul a {
     display: block;
     white-space: nowrap;
     font-size: 15px;
@@ -131,7 +131,7 @@ nav>ul>li>ul a {
     -webkit-transition: color 0.25s ease-in-out;
 }
 
-nav>ul>li>ul a:hover {
+nav > ul > li > ul a:hover {
     color: #00305b;
     text-shadow: 0 0 0.5px #00305b;
 }
@@ -155,8 +155,8 @@ nav>ul>li>ul a:hover {
     margin-bottom: 6px;
     display: block;
     background-color: #000;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     transform-origin: 0;
     /* 트랜지션 종류 찾아보기 */
 }
@@ -241,7 +241,7 @@ nav>ul>li>ul a:hover {
     font-size: 0;
 }
 
-.allMenuWrap .allMenu>li {
+.allMenuWrap .allMenu > li {
     display: inline-block;
     width: 20%;
     box-sizing: border-box;
@@ -250,12 +250,12 @@ nav>ul>li>ul a:hover {
     padding: 0 10px;
 }
 
-.allMenuWrap .allMenu>li:first-child {
+.allMenuWrap .allMenu > li:first-child {
     padding-left: 0;
 }
 
-.allMenuWrap .allMenu>li>a,
-.allMenuWrap .allMenu>li>span {
+.allMenuWrap .allMenu > li > a,
+.allMenuWrap .allMenu > li > span {
     display: block;
     font-size: 37px;
     font-weight: 600;
@@ -263,11 +263,11 @@ nav>ul>li>ul a:hover {
     color: #466c8f;
 }
 
-.allMenuWrap .allMenu>li>span {
+.allMenuWrap .allMenu > li > span {
     display: none;
 }
 
-.allMenuWrap .allMenu>li>a em {
+.allMenuWrap .allMenu > li > a em {
     display: block;
     font-size: 15px;
     line-height: 22px;
@@ -278,7 +278,10 @@ nav>ul>li>ul a:hover {
 
 .allMenuWrap .allMenu li ul {
     display: block;
-    padding-top: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    height: auto;
 }
 
 .allMenuWrap .allMenu li li {
@@ -286,7 +289,7 @@ nav>ul>li>ul a:hover {
     text-align: left;
 }
 
-.allMenuWrap .allMenu li ul li+li {
+.allMenuWrap .allMenu li ul li + li {
     margin-top: 10px;
 }
 
@@ -363,7 +366,7 @@ nav>ul>li>ul a:hover {
 } */
 
 .ft_info span:not(:last-child)::after {
-    content: " /";
+    content: ' /';
 }
 
 .ft_copy {
@@ -386,7 +389,7 @@ nav>ul>li>ul a:hover {
 }
 
 .ft_copy a:not(:last-child)::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 1px;
     height: 12px;
@@ -430,7 +433,7 @@ nav>ul>li>ul a:hover {
         padding: 0 50px;
     }
 
-    .allMenuWrap .allMenu>li>a {
+    .allMenuWrap .allMenu > li > a {
         font-size: 30px;
         line-height: 40px;
     }
@@ -438,7 +441,6 @@ nav>ul>li>ul a:hover {
     .allMenuWrap .allMenu li li a {
         font-size: 16px;
     }
-
 }
 
 @media only screen and (max-width: 1244px) {
@@ -448,31 +450,35 @@ nav>ul>li>ul a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
-    .allMenuWrap .allMenu>li {
+    .allMenuWrap .allMenu > li {
         display: block;
         padding: 0;
         width: 100%;
         text-align: center;
     }
-    
-    .allMenuWrap .allMenu>li>span {
+
+    .allMenuWrap .allMenu > li > span {
         display: block;
         cursor: pointer;
     }
 
-    .allMenuWrap .allMenu>li>a {
+    .allMenuWrap .allMenu > li > a {
         display: none;
     }
 
-    .allMenuWrap .allMenu>li>span {
+    .allMenuWrap .allMenu > li > span {
         font-size: 30px;
         line-height: 40px;
     }
 
     .allMenuWrap .allMenu li ul {
-        display: none;
-        padding-top: 20px;
-        padding-bottom: 17px;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 17px;
+        max-height: 0;
+    }
+
+    .allMenuWrap .allMenu li ul.active {
     }
 
     .allMenuWrap .allMenu > li + li {
@@ -486,7 +492,7 @@ nav>ul>li>ul a:hover {
     .allMenuWrap .allMenu li li {
         text-align: center;
     }
-    
+
     .ft_wrap {
         flex-direction: column;
         align-items: flex-start;
@@ -560,6 +566,19 @@ nav>ul>li>ul a:hover {
     h1 img {
         left: 15px;
         height: 26px;
+    }
+
+    .allMenuWrap .allMenu > li > a,
+    .allMenuWrap .allMenu > li > span {
+        font-size: 25px;
+    }
+
+    .allMenuWrap .allMenu li ul li + li {
+        margin-top: 0;
+    }
+
+    .allMenuWrap .allMenu li ul > li > a {
+        font-size: 13px;
     }
 
     .logo img {
