@@ -39,6 +39,7 @@ function squareCont() {
 }
 
 window.addEventListener('scroll', squareCont);
+window.addEventListener('load', squareCont);
 
 //햄버거메뉴 클릭
 const ham = document.getElementById('ham');
@@ -66,10 +67,6 @@ function hamClick() {
 //네비게이션 리스트 클릭
 const test = document.querySelectorAll('.mTitle');
 
-// test[0].addEventListener('click', function () {
-//     mToggle[0].classList.toggle('active');
-// });
-
 for (let i = 0; i < test.length; i++) {
     test[i].addEventListener('click', function () {
         const mToggle = document.querySelectorAll('.mToggle');
@@ -80,7 +77,6 @@ for (let i = 0; i < test.length; i++) {
             for (j = 0; j < mToggle.length; j++) {
                 mToggle[j].style.maxHeight = null;
             }
-
             mToggle[i].style.maxHeight = mToggle[i].scrollHeight + 'px';
         }
     });

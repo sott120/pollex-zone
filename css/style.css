@@ -26,7 +26,7 @@ svg {
     height: 100%;
 }
 
-svg > text {
+svg>text {
     font-family: Poppins-Bold, Poppins;
     font-size: 180px;
     font-weight: bold;
@@ -39,15 +39,6 @@ svg > text {
     stroke-dashoffset: 0;
     animation: stroke 2s ease-in-out;
 }
-
-@keyframes stroke { 
-    0% { 
-      stroke-dashoffset: 750;
-    } 
-    100% { 
-      stroke-dashoffset: 0;
-    } 
-  }
 
 
 #sec1 article {
@@ -67,21 +58,13 @@ svg > text {
     color: #000;
 }
 
-#sec1 article p span{
+#sec1 article p span {
     display: block;
     transform: translateY(0);
     transition: transform 1s ease-in-out;
     animation: slideup 1s ease-in-out;
 }
 
-@keyframes slideup { 
-    0% { 
-        transform: translateY(100%);
-    } 
-    100% { 
-        transform: translateY(0);
-    } 
-  }
 
 .btn_more a {
     display: block;
@@ -97,16 +80,7 @@ svg > text {
     animation: more_btn 1s ease-in-out;
 }
 
-@keyframes more_btn { 
-    0% { 
-        transform: translateY(100%);
-        opacity: 0;
-    } 
-    100% { 
-        transform: translateY(0);
-        opacity: 1;
-    } 
-  }
+
 
 /* sec2 start */
 #sec2 {
@@ -167,6 +141,7 @@ svg > text {
     padding: 5px;
     box-sizing: border-box;
 }
+
 .cont_big a {
     display: block;
     width: 100%;
@@ -177,13 +152,14 @@ svg > text {
     background-position: center center;
     position: relative;
 }
+
 .cont_small {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.cont_small > div {
+.cont_small>div {
     width: 50%;
     padding: 5px;
     box-sizing: border-box;
@@ -202,12 +178,15 @@ svg > text {
 .cont_small .img1 {
     background-image: url(../img/main/mc2_img2.jpg);
 }
+
 .cont_small .img2 {
     background-image: url(../img/main/mc2_img3.jpg);
 }
+
 .cont_small .img3 {
     background-image: url(../img/main/mc2_img4.jpg);
 }
+
 .cont_small .img4 {
     background-image: url(../img/main/mc2_img5.jpg);
 }
@@ -241,7 +220,8 @@ svg > text {
 .mc3 {
     padding: 135px 0;
 }
-.mc3 > h2 {
+
+.mc3>h2 {
     font-size: 36px;
     font-weight: bold;
     line-height: 54px;
@@ -249,7 +229,7 @@ svg > text {
     margin-bottom: 50px;
 }
 
-.mc3 > div > div {
+.mc3>div>div {
     width: calc(100% + 114px);
     display: flex;
     margin-left: -57px;
@@ -317,14 +297,16 @@ figcaption p {
 .ma_img {
     background-image: url(../img/main/mc4_loc2.jpg);
 }
+
 .go_img {
     background-image: url(../img/main/mc4_loc3.jpg);
 }
+
 .se_img {
     background-image: url(../img/main/mc4_loc1.jpg);
 }
 
-.cen_img.on{
+.cen_img.on {
     opacity: 1;
 }
 
@@ -338,7 +320,7 @@ figcaption p {
     align-items: flex-end;
 }
 
-.cen_txt > div{
+.cen_txt>div {
     position: absolute;
     left: 0;
     bottom: 150px;
@@ -350,7 +332,7 @@ figcaption p {
     transition: all .4s ease-in-out;
 }
 
-.cen_txt > div.on{
+.cen_txt>div.on {
     opacity: 1;
 }
 
@@ -391,7 +373,7 @@ figcaption p {
     margin-top: 30px;
 }
 
-.icon_txt.on{
+.icon_txt.on {
     opacity: 1;
 }
 
@@ -409,9 +391,11 @@ figcaption p {
 .ma_icon span {
     background-image: url(../img/main/mc4_icon2.png);
 }
+
 .go_icon span {
     background-image: url(../img/main/mc4_icon3.png);
 }
+
 .se_icon span {
     background-image: url(../img/main/mc4_icon1.png);
 }
@@ -434,7 +418,8 @@ figcaption p {
     display: flex;
     justify-content: space-between;
 }
-.noti_wrap > div {
+
+.noti_wrap>div {
     width: 50%;
 }
 
@@ -445,6 +430,7 @@ figcaption p {
 .noti_right {
     padding-left: 40px;
 }
+
 .noti_wrap h4 {
     position: relative;
     font-size: 20px;
@@ -502,13 +488,12 @@ figcaption p {
     flex-direction: column;
     justify-content: center;
     height: 400px;
-    padding: 0 20px;
     text-align: center;
     overflow: hidden;
-    
+
 }
 
-.about_1::before{
+.about_1::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -518,12 +503,18 @@ figcaption p {
     background-size: cover;
     background-position: center center;
     z-index: -10;
-    animation-name: zoomout;
+    /* animation-name: zoomout;
     animation-timing-function:ease-in-out;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
+}
+.t_about_pollex{
+    overflow: hidden;
 }
 
+.about_pollex{
+    overflow: hidden;
+}
 
 .about_1 h3 {
     display: block;
@@ -532,6 +523,11 @@ figcaption p {
     line-height: 1.68;
     letter-spacing: 1.08px;
     color: #fff;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+    animation: slideup 1s ease-in-out;
+    
 }
 
 .about_1 p {
@@ -540,12 +536,31 @@ figcaption p {
     font-weight: 300;
     line-height: 1.57;
     color: #fff;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+    animation: slideup 1s ease-in-out;
+    
 }
 
 .about_2 {
     text-align: center;
     padding-top: 110px;
     padding-bottom: 240px;
+}
+
+.aniBox.type_bot {
+    opacity: 0;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+}
+
+.aniBox.type_bot.gogo {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .about_2 h3 {
@@ -605,6 +620,7 @@ img.intrd_txt {
     padding: 0 68px;
     box-sizing: border-box;
 }
+
 .txt_box {
     margin: 0 auto;
     margin-top: 50px;
@@ -649,6 +665,7 @@ img.intrd_txt {
     background-color: #f5f5f5;
     border-radius: 50%;
 }
+
 .icon_cercle::before {
     position: absolute;
     content: "";
@@ -665,9 +682,11 @@ img.intrd_txt {
 .cer1::before {
     background-image: url(../img/contents/bd_about01.png);
 }
+
 .cer2::before {
     background-image: url(../img/contents/bd_about02.png);
 }
+
 .cer3::before {
     background-image: url(../img/contents/bd_about03.png);
 }
@@ -710,11 +729,12 @@ img.intrd_txt {
     border-bottom: 1px solid #dcdcdc;
 }
 
-.col2 > div {
+.col2>div {
     width: 50%;
     display: flex;
 }
-.col2 > div > div {
+
+.col2>div>div {
     height: 100%;
     padding: 8px 20px;
     letter-spacing: -0.8px;
@@ -726,6 +746,7 @@ img.intrd_txt {
     align-items: center;
     font-weight: 500;
 }
+
 .col2 span {
     flex-shrink: 0;
     width: 110px;
@@ -745,6 +766,7 @@ img.intrd_txt {
 .bd_bot {
     border-bottom: none;
 }
+
 .bd_left {
     border-left: 1px solid #dcdcdc;
 }
@@ -752,6 +774,7 @@ img.intrd_txt {
 .ci {
     padding-top: 168px;
 }
+
 .ci_box {
     border: 5px solid #dcdcdc;
     padding: 100px 15px;
@@ -762,6 +785,7 @@ img.intrd_txt {
     width: 200px;
     height: auto;
 }
+
 .ci_txt {
     margin-top: 60px;
     text-align: center;
@@ -808,9 +832,11 @@ img.intrd_txt {
 .item1 span {
     background-color: #221e1e;
 }
+
 .item2 span {
     background-color: #d0e6c8;
 }
+
 .item3 span {
     background-color: #06772d;
 }
@@ -834,7 +860,8 @@ img.intrd_txt {
     #sec1 {
         padding-top: 90px;
     }
-    svg > text {
+
+    svg>text {
         font-size: 15.5vw;
         stroke-width: 1px;
     }
@@ -845,16 +872,19 @@ img.intrd_txt {
         font-size: 34px;
         line-height: 50px;
     }
-    .mc3 > div > div {
+
+    .mc3>div>div {
         width: calc(100% + 40px);
         display: flex;
         margin-left: -20px;
     }
+
     .mc3 figure {
         width: 33.333%;
         padding: 0 20px;
         box-sizing: border-box;
     }
+
     .center {
         height: 100vw;
     }
@@ -868,12 +898,15 @@ img.intrd_txt {
     .col2 {
         flex-direction: column;
     }
-    .col2 > div {
+
+    .col2>div {
         width: 100%;
     }
+
     .bd_bot {
         border-bottom: 1px solid #dcdcdc;
     }
+
     .bd_left {
         border-left: none;
     }
@@ -883,6 +916,7 @@ img.intrd_txt {
     #sec1 {
         padding-top: 50px;
     }
+
     #sec1 article p {
         font-size: 28px;
         line-height: 44px;
@@ -896,17 +930,18 @@ img.intrd_txt {
     .cont_big {
         width: 100%;
     }
-    
+
     .cont_small {
         width: 100%;
     }
-    
+
 }
 
 @media only screen and (max-width: 767px) {
     main {
         padding-top: 50px;
     }
+
     #sec1 {
         padding-top: 0;
     }
@@ -938,6 +973,7 @@ img.intrd_txt {
     .mc1_bnr h3 {
         font-size: 20px;
     }
+
     .mc1_bnr p {
         font-size: 12px;
     }
@@ -964,20 +1000,23 @@ img.intrd_txt {
     .mc3 {
         padding: 80px 0;
     }
-    .mc3 > h2 {
+
+    .mc3>h2 {
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 40px;
     }
 
-    .mc3 > div {
+    .mc3>div {
         width: 102.5%;
         overflow-x: scroll;
     }
-    .mc3 > div > div {
+
+    .mc3>div>div {
         width: 270%;
         margin-left: 0;
     }
+
     .mc3 figure {
         padding: 0 5px;
     }
@@ -995,12 +1034,13 @@ img.intrd_txt {
     .center {
         height: 160vw;
     }
+
     .cen_wrap {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .cen_txt > div{
+    .cen_txt>div {
         width: 100%;
         top: 50px;
         bottom: auto;
@@ -1010,10 +1050,12 @@ img.intrd_txt {
         font-size: 12px;
         line-height: 20px;
     }
+
     .cen_txt h2 a {
         font-size: 50px;
         line-height: 70px;
     }
+
     .cen_txt p,
     .cen_txt p span {
         display: inline;
@@ -1027,7 +1069,7 @@ img.intrd_txt {
         width: 100%;
     }
 
-    .cen_icon > ul {
+    .cen_icon>ul {
         display: flex;
         justify-content: space-around;
     }
@@ -1040,15 +1082,19 @@ img.intrd_txt {
     .noti_wrap {
         flex-direction: column;
     }
-    .noti_wrap > div {
+
+    .noti_wrap>div {
         width: 100%;
     }
+
     .noti_wrap p {
         font-size: 13px;
     }
+
     .noti_left {
         padding: 0;
     }
+
     .noti_right {
         margin-top: 60px;
         padding: 0;
@@ -1062,6 +1108,7 @@ img.intrd_txt {
     .about_1 h3 {
         font-size: 26px;
     }
+
     .about_1 p {
         font-size: 12px;
     }
@@ -1076,6 +1123,7 @@ img.intrd_txt {
         padding-bottom: 15px;
         margin-bottom: 40px;
     }
+
     .about_2 h4 {
         font-size: 18px;
         margin-bottom: 30px;
@@ -1088,6 +1136,7 @@ img.intrd_txt {
     .txt_box span {
         font-size: 22px;
     }
+
     .txt_box p {
         font-size: 13px;
         margin-top: 10px;
@@ -1108,10 +1157,11 @@ img.intrd_txt {
         margin-top: 60px;
     }
 
-    .col2 > div {
+    .col2>div {
         height: 45px;
     }
-    .col2 > div > div {
+
+    .col2>div>div {
         height: 45px;
         padding: 8px 20px;
         min-height: 0;
@@ -1134,9 +1184,11 @@ img.intrd_txt {
         font-size: 20px;
         margin-top: 5px;
     }
+
     .ci_color {
         transform: translateX(-5px);
     }
+
     .ci_color li {
         width: 50%;
         padding-left: 10px;
