@@ -6,18 +6,18 @@
     to {
         top: 0;
     }
-}
+}*/
 
- @keyframes zoomout {
+@keyframes zoomout {
     0% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
     100% {
-        transform: scale(1.1);
+        transform: scale(1);
     }
-} 
-
+}
+/*
 @keyframes rotate {
     from {
         top: -70px;
@@ -39,48 +39,50 @@
     }
 }
 } */
-@keyframes sildein { 
-    0% { 
-      top:-70px;
-    } 
-    10%{
-        top:-70px;
+@keyframes sildein {
+    0% {
+        top: -70px;
+    }
+    10% {
+        top: -70px;
     }
     100% {
-      top: 0;
+        top: 0;
     }
-  }
+}
 
-
-@keyframes stroke { 
-    0% { 
-      stroke-dashoffset: 750;
-    } 
+@keyframes stroke {
+    0% {
+        stroke-dashoffset: 750;
+    }
     100% {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
+}
 
-  
-@keyframes slideup { 
-    0% { 
+@keyframes slideup {
+    0% {
         transform: translateY(100%);
-    } 
-    100% { 
+    }
+    100% {
         transform: translateY(0);
-    } 
-  }
+    }
+}
 
-@keyframes more_btn { 
-    0% { 
+@keyframes more_btn {
+    0% {
         transform: translateY(100%);
         opacity: 0;
-    } 
-    100% { 
+    }
+    100% {
         transform: translateY(0);
         opacity: 1;
-    } 
-  }
+    }
+}
+
+.aniBox {
+    position: relative;
+}
 
 .aniBox.type_cv:after {
     content: '';
@@ -94,21 +96,49 @@
     -webkit-transition: all 1s ease-in-out;
 }
 
-.aniBox.type_cv.rightleft:after {
+/* 메인 네모박스 */
+.aniBox.type_cv.rightleft::after {
     right: 0;
     left: auto;
 }
 
-.aniBox.type_cv.bottop:after {
+.aniBox.type_cv.bottop::after {
     top: 0;
 }
 
-.aniBox.type_cv.gogo:after {
+.aniBox.type_cv.gogo::after {
     height: 0;
 }
 
-
-.aniBox.type_cv.rightleft.gogo:after, .aniBox.type_cv.leftright.gogo:after {
+.aniBox.type_cv.rightleft.gogo::after,
+.aniBox.type_cv.leftright.gogo::after {
     width: 0;
     height: 101%;
+}
+
+/* 소개 이미지 after */
+
+.aniBox.type_img_scale {
+    overflow: hidden;
+}
+
+/* 소개 아이콘 rotation */
+.list-item.gogo::before {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+/* ci 섹션 */
+.aniBox.type_bot {
+    opacity: 0;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+}
+
+.aniBox.type_bot.gogo {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }

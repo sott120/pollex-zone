@@ -26,20 +26,19 @@ svg {
     height: 100%;
 }
 
-svg>text {
+svg > text {
     font-family: Poppins-Bold, Poppins;
     font-size: 180px;
     font-weight: bold;
     fill: transparent;
     stroke: rgb(57, 185, 25);
-    opacity: .4;
+    opacity: 0.4;
     stroke-width: 2;
     stroke-dasharray: 750;
     stroke-dashoffset: 750;
     stroke-dashoffset: 0;
     animation: stroke 2s ease-in-out;
 }
-
 
 #sec1 article {
     position: relative;
@@ -65,7 +64,6 @@ svg>text {
     animation: slideup 1s ease-in-out;
 }
 
-
 .btn_more a {
     display: block;
     width: 180px;
@@ -79,8 +77,6 @@ svg>text {
     font-size: 18px;
     animation: more_btn 1s ease-in-out;
 }
-
-
 
 /* sec2 start */
 #sec2 {
@@ -159,7 +155,7 @@ svg>text {
     flex-wrap: wrap;
 }
 
-.cont_small>div {
+.cont_small > div {
     width: 50%;
     padding: 5px;
     box-sizing: border-box;
@@ -221,7 +217,7 @@ svg>text {
     padding: 135px 0;
 }
 
-.mc3>h2 {
+.mc3 > h2 {
     font-size: 36px;
     font-weight: bold;
     line-height: 54px;
@@ -229,7 +225,7 @@ svg>text {
     margin-bottom: 50px;
 }
 
-.mc3>div>div {
+.mc3 > div > div {
     width: calc(100% + 114px);
     display: flex;
     margin-left: -57px;
@@ -291,7 +287,7 @@ figcaption p {
     background-position: center center;
     background-size: cover;
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .ma_img {
@@ -320,7 +316,7 @@ figcaption p {
     align-items: flex-end;
 }
 
-.cen_txt>div {
+.cen_txt > div {
     position: absolute;
     left: 0;
     bottom: 150px;
@@ -329,10 +325,10 @@ figcaption p {
     opacity: 0;
     z-index: 0;
     text-align: left;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.cen_txt>div.on {
+.cen_txt > div.on {
     opacity: 1;
 }
 
@@ -419,7 +415,7 @@ figcaption p {
     justify-content: space-between;
 }
 
-.noti_wrap>div {
+.noti_wrap > div {
     width: 50%;
 }
 
@@ -490,11 +486,10 @@ figcaption p {
     height: 400px;
     text-align: center;
     overflow: hidden;
-
 }
 
 .about_1::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 400px;
@@ -503,17 +498,15 @@ figcaption p {
     background-size: cover;
     background-position: center center;
     z-index: -10;
-    /* animation-name: zoomout;
-    animation-timing-function:ease-in-out;
+    animation-name: zoomout;
+    animation-timing-function: ease-in-out;
     animation-duration: 2s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
-.t_about_pollex{
+.t_about_pollex,
+.about_pollex {
     overflow: hidden;
-}
-
-.about_pollex{
-    overflow: hidden;
+    padding: 0 10px;
 }
 
 .about_1 h3 {
@@ -527,7 +520,6 @@ figcaption p {
     transform: translateY(0);
     transition: transform 1s ease-in-out;
     animation: slideup 1s ease-in-out;
-    
 }
 
 .about_1 p {
@@ -540,7 +532,6 @@ figcaption p {
     transform: translateY(0);
     transition: transform 1s ease-in-out;
     animation: slideup 1s ease-in-out;
-    
 }
 
 .about_2 {
@@ -577,7 +568,7 @@ figcaption p {
 
 .about_2 h3::before {
     position: absolute;
-    content: "";
+    content: '';
     left: 50%;
     bottom: 0;
     width: 30px;
@@ -598,13 +589,19 @@ figcaption p {
 
 .about_2 h4::before {
     position: absolute;
-    content: "";
+    content: '';
     left: 50%;
     bottom: 0;
-    width: 100%;
+    width: 0%;
     height: 1px;
     background-color: #00305b;
     transform: translateX(-50%);
+    transition: width 0.6s ease-in-out;
+    transition-delay: 0.6s;
+}
+
+.about_2 h4.gogo::before {
+    width: 100%;
 }
 
 .img2_bnr img {
@@ -657,7 +654,7 @@ img.intrd_txt {
     text-align: center;
 }
 
-.icon_cercle {
+.icon_circle {
     position: relative;
     margin: 0 auto;
     width: 160px;
@@ -666,9 +663,9 @@ img.intrd_txt {
     border-radius: 50%;
 }
 
-.icon_cercle::before {
+.icon_circle::before {
     position: absolute;
-    content: "";
+    content: '';
     display: block;
     left: -4px;
     top: -4px;
@@ -677,21 +674,27 @@ img.intrd_txt {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0;
+    transform: rotate(-30deg);
+    transition: opacity 0.4s ease-in-out, transform 0.6s ease-in-out;
+    transition-delay: 0.2s;
 }
 
-.cer1::before {
+.cir1::before {
     background-image: url(../img/contents/bd_about01.png);
 }
 
-.cer2::before {
+.cir2::before {
     background-image: url(../img/contents/bd_about02.png);
+    transition-delay: 0.4s;
 }
 
-.cer3::before {
+.cir3::before {
     background-image: url(../img/contents/bd_about03.png);
+    transition-delay: 0.6s;
 }
 
-.icon_cercle img {
+.icon_circle img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -729,12 +732,12 @@ img.intrd_txt {
     border-bottom: 1px solid #dcdcdc;
 }
 
-.col2>div {
+.col2 > div {
     width: 50%;
     display: flex;
 }
 
-.col2>div>div {
+.col2 > div > div {
     height: 100%;
     padding: 8px 20px;
     letter-spacing: -0.8px;
@@ -861,7 +864,7 @@ img.intrd_txt {
         padding-top: 90px;
     }
 
-    svg>text {
+    svg > text {
         font-size: 15.5vw;
         stroke-width: 1px;
     }
@@ -873,7 +876,7 @@ img.intrd_txt {
         line-height: 50px;
     }
 
-    .mc3>div>div {
+    .mc3 > div > div {
         width: calc(100% + 40px);
         display: flex;
         margin-left: -20px;
@@ -899,7 +902,7 @@ img.intrd_txt {
         flex-direction: column;
     }
 
-    .col2>div {
+    .col2 > div {
         width: 100%;
     }
 
@@ -934,7 +937,6 @@ img.intrd_txt {
     .cont_small {
         width: 100%;
     }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -1001,18 +1003,18 @@ img.intrd_txt {
         padding: 80px 0;
     }
 
-    .mc3>h2 {
+    .mc3 > h2 {
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 40px;
     }
 
-    .mc3>div {
+    .mc3 > div {
         width: 102.5%;
         overflow-x: scroll;
     }
 
-    .mc3>div>div {
+    .mc3 > div > div {
         width: 270%;
         margin-left: 0;
     }
@@ -1040,7 +1042,7 @@ img.intrd_txt {
         align-items: flex-start;
     }
 
-    .cen_txt>div {
+    .cen_txt > div {
         width: 100%;
         top: 50px;
         bottom: auto;
@@ -1069,7 +1071,7 @@ img.intrd_txt {
         width: 100%;
     }
 
-    .cen_icon>ul {
+    .cen_icon > ul {
         display: flex;
         justify-content: space-around;
     }
@@ -1083,7 +1085,7 @@ img.intrd_txt {
         flex-direction: column;
     }
 
-    .noti_wrap>div {
+    .noti_wrap > div {
         width: 100%;
     }
 
@@ -1147,7 +1149,7 @@ img.intrd_txt {
         margin-top: 30px;
     }
 
-    .icon_cercle {
+    .icon_circle {
         width: 130px;
         height: 130px;
     }
@@ -1157,11 +1159,11 @@ img.intrd_txt {
         margin-top: 60px;
     }
 
-    .col2>div {
+    .col2 > div {
         height: 45px;
     }
 
-    .col2>div>div {
+    .col2 > div > div {
         height: 45px;
         padding: 8px 20px;
         min-height: 0;
