@@ -503,13 +503,13 @@ figcaption p {
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-.t_about_pollex,
+.about_1 h3,
 .about_pollex {
     overflow: hidden;
     padding: 0 10px;
 }
 
-.about_1 h3 {
+.t_about_pollex {
     display: block;
     font-weight: bold;
     font-size: 40px;
